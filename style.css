@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Oleo+Script&display=swap');
+
+/* Assigning colors to variables */
+
+:root{
+    --safron: #ff9933;
+    --white: #fff;
+    --green: #02590f;
+    --chakra-color: #000080;
+    --bgcol1: #FF991F;
+    --bgcol2: #0052CC;
+}
+
+/* Universal Selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper */
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg, var(--bgcol1), var(--bgcol2));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+/* heading */
+
+.heading{
+    font-family: 'Oleo Script', cursive;
+    font-size: 2.5em;
+}
+
+/* Main cointainer box of flag */
+
+.container{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Setting up three colors */
+
+.safron{
+    width: 100%;
+    height: 33.33%;
+    background-color: var(--safron);
+}
+.green{
+    width: 100%;
+    height: 33.33%;
+    background-color: var(--green);
+}
+.white{
+    width: 100%;
+    height: 33.33%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Creating style or layout for spoke wheels*/
+
+.chakra{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid var(--chakra-color);
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s ease-out;
+    animation: rotate-chakra 5s infinite linear;
+}
+.chakra .spokes{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80px;
+    height: 3px;
+    background-color: var(--chakra-color);
+}
+.spokes:nth-child(1){
+    transform: rotate(0deg);
+}
+.spokes:nth-child(2){
+    transform: rotate(15deg);
+}
+.spokes:nth-child(3){
+    transform: rotate(30deg);
+}
+.spokes:nth-child(4){
+    transform: rotate(45deg);
+}
+.spokes:nth-child(5){
+    transform: rotate(60deg);
+}
+.spokes:nth-child(6){
+    transform: rotate(75deg);
+}
+.spokes:nth-child(7){
+    transform: rotate(90deg);
+}
+.spokes:nth-child(8){
+    transform: rotate(105deg);
+}
+.spokes:nth-child(9){
+    transform: rotate(120deg);
+}
+.spokes:nth-child(10){
+    transform: rotate(135deg);
+} 
+.spokes:nth-child(11){
+    transform: rotate(150deg);
+}
+.spokes:nth-child(12){
+    transform: rotate(165deg);
+}
+
+/* Animating Rotation for Ashok Chakra */
+
+@keyframes rotate-chakra{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.container:hover .chakra{
+    animation-play-state: paused;
+}
+
+/* Coloring INDIA */
+
+.footer{
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5em;
+}
+.footer span:nth-child(1){
+    color: var(--safron);
+}
+.footer span:nth-child(2){
+    color: var(--white) ;
+}
+.footer span:nth-child(3){
+    color: var(--green) ;
+}
+
+/* Creating Responsivness */
+
+@media screen and (max-width: 650px)
+{
+    .heading{
+        font-size: 1.5em;
+    }
+    .container{
+        width: 330px;
+        height: 280px;
+    }
+    .footer span{
+        font-size: 0.9em;
+    }
+}
