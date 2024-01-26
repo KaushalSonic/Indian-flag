@@ -5,6 +5,7 @@
 ### :hammer_and_wrench: Tech Stack Used : 
 * HTML5
 * CSS3
+* JavaScript
 ### :memo: *Description* : 
 * A mini project of Indian Flag component with rotating chakra when hover on it.
 * It has 24 spokes in the Ashok chakra like it is present in our flag.
