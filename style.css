@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 /* Assigning colors to variables */
 
@@ -20,7 +21,7 @@
 }
 
 html{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Wrapper */
@@ -44,16 +45,16 @@ html{
 /* heading */
 
 .heading{
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oleo Script', system-ui;
     font-size: 2.3em;
 }
 
 /* Main cointainer box of flag */
 
 .container{
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
+    width: 32rem;
+    height: 19rem;
+    border-radius: 1.8rem;
     overflow: hidden;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
     margin: 2rem 0;
@@ -83,10 +84,10 @@ html{
 /* Creating style or layout for spoke wheels*/
 
 .chakra{
-    width: 85px;
-    height: 85px;
+    width: 5.3rem;
+    height: 5.3rem;
     border-radius: 50%;
-    border: 3px solid var(--chakra-color);
+    border: 0.2rem solid var(--chakra-color);
     position: relative;
     overflow: hidden;
     transition: transform 1s ease-out;
@@ -99,8 +100,8 @@ html{
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 80px;
-    height: 3px;
+    width: 5rem;
+    height: 0.2rem;
     background-color: var(--chakra-color);
 }
 .spokes:nth-child(1){
@@ -156,25 +157,42 @@ html{
 
 /* Coloring INDIA */
 
-.footer{
+.btn{
     font-family: 'Jost', sans-serif;
     font-size: 3.5em;
+    font-weight: 600;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-.footer span:nth-child(1){
+.btn span:nth-child(1){
     color: var(--safron);
 }
-.footer span:nth-child(2){
+.btn span:nth-child(2){
     color: var(--white) ;
 }
-.footer span:nth-child(3){
+.btn span:nth-child(3){
     color: var(--green) ;
 }
 
+
+
 /* Creating Responsivness */
 
-/* @media screen and (max-width: 600px)
+@media screen and (max-width: 600px)
 {
     html{
-      font-size: 12px;
+      font-size: 10px;
     }
-} */
+    .container{
+        margin: 5rem 0;
+        height: 22rem;
+    }
+    .heading{
+        font-size: 2.6em;
+    }
+    .btn{
+        font-size: 5.5em;
+    }
+}
