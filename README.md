@@ -14,6 +14,6 @@
 * Press/Click INDIA to play the **National Anthem** 🎶 🧡🤍💚.
 ### **<a href="https://kaushalsonic.github.io/Indian-flag/" target="_blank">Live Link :rocket:</a>**
 
-## Preview Image
+## Preview Image 👀
 
 <img width="212" alt="indian flag" src="https://github.com/KaushalSonic/Indian-flag/assets/88739514/4ba4c23b-49d6-4bd3-b98d-92a8d61dcc4e">
